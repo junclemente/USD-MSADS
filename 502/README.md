@@ -124,6 +124,7 @@ sudo apt-get install pandoc
 ```
 
 Install `TeX`
+This is a large download so it may take some time to install.
 
 ```
 sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic
