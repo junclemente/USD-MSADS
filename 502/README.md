@@ -4,7 +4,7 @@ In this class, it is necessary to code in both Python and R.
 I prefer using Jupyter Notebooks in VSCode over RStudio, even though it was
 much easier to setup RStudio to run both languages.
 
-Unfortunately, rpy2 is required to use Python and R in Jupyter Notebooks but
+Unfortunately, [rpy2](https://rpy2.github.io/doc/latest/html/introduction.html) is required to use Python and R in Jupyter Notebooks but
 there are no binaries to for for rpy2 that work in Windows as of the
 writing of this post (July 2024).
 
