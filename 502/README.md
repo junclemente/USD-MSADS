@@ -52,13 +52,42 @@ After installing miniconda, initialize the bash and zsh shells:
 
 ## Create a conda environment with Python and R
 
-Type the following to create the conda environment with name <environment name>.
-You can install the specific version of python by including 'python=version number,
-otherwise, if you do not include it, it will install the latest version of Python.
+Type the following to create the conda environment. This will create an
+environment named "pyr-wsl". You can replace this with any name you want.
+This will also install python version 3.10.12. If you would like to install a
+different version, replace the version number, or, remove 'python=3.10.12'
+completely to install the latest version of python.
 
 ```
-conda create -c conde-forge -n <environment name> <python=3.10.12> ipython rpy2 r r-essentials
-pandas numpy seaborn matplotlib scikit-learn jupyter
+conda create -c conde-forge -n pyr-wsl python=3.10.12 ipython rpy2 r r-essentials
+pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
+```
+
+## Running Jupyter Notebook from WSL2
+
+You can activate the conda environment with the following:
+
+```
+conda activate <environment name>
+```
+
+And you should be able to start Jupyter Notebooks once you're in the
+environment by typing:
+
+```
+jupyter notebook
+```
+
+This will start the Jupyter Notebook server but it may not open up a browser
+window. To view the notebook, follow the instructions in the console to get
+the address of the notebook. It should look like this:
+
+```
+To access the server, open this file in a browser:
+   file:///home/jc/.local/share/jupyter/runtime/jpserver-310846-open.html
+Or copy and paste one of these URLs:
+   http://localhost:8888/tree?token=c8c48b06310ff4f4b31bc3c5328c0cd4fd9421d7941d475b
+   http://127.0.0.1:8888/tree?token=c8c48b06310ff4f4b31bc3c5328c0cd4fd9421d7941d475b
 ```
 
 ## WSL2 extension for VS Code
