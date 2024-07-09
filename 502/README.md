@@ -101,3 +101,31 @@ extension and following the instructions on this page:
 [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
 
 **Source**: [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl#:~:text=The%20WSL%20extension%20lets%20you,as%20you%20would%20from%20Windows.)
+
+## Exporting Jupyter Notebook to PDF
+
+To export your notebook to PDF, you will need to install a few more libraries.
+
+Open your conda environment: `conda activate <environment name>`
+
+To be consistent, I install everything from the conda-forge repository, hence
+the use of `-c conda-forge`
+Install `nbconvert`:
+
+```
+conda instal -c conda-forge nbconvert
+```
+
+Install `Pandoc`
+
+```
+sudo apt-get install pandoc
+```
+
+Install `TeX`
+
+```
+sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic
+```
+
+**Source:** [Installing Nbconvert](https://nbconvert.readthedocs.io/en/latest/install.html#supported-python-versions)
