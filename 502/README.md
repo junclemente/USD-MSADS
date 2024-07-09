@@ -98,6 +98,7 @@ If you don't have VSCode installed, download from here: [Visual Studio Code](htt
 
 Install the WSL Extension to allow VSCode to connect to WSL by installing the
 extension and following the instructions on this page:
+
 [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
 
 **Source**: [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl#:~:text=The%20WSL%20extension%20lets%20you,as%20you%20would%20from%20Windows.)
@@ -113,7 +114,7 @@ the use of `-c conda-forge`
 Install `nbconvert`:
 
 ```
-conda instal -c conda-forge nbconvert
+conda install -c conda-forge nbconvert
 ```
 
 Install `Pandoc`
