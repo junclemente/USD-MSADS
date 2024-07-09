@@ -12,7 +12,7 @@ writing of this post (July 2024).
 Therefore, the work around is to create the environment in WSL2 and use
 VSCode extensions to remote into the WSL2 environment.
 
-## Install WSL2
+## Install Windows Subsystem for Linus (WSL2)
 
 If you do not already have WSL2 installed on your Windows machine, follow the
 directions on this page to install WSL2 and Ubuntu.
@@ -23,6 +23,8 @@ Open powershell and type the following:
 wsl --install
 
 ```
+
+This will install WSL2 and Ubuntu by default.
 
 **Source:** [How to install Linux on Windows WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
@@ -49,3 +51,14 @@ After installing miniconda, initialize the bash and zsh shells:
 **Source:** [Quick command line install](https://docs.anaconda.com/miniconda/)
 
 ## Create a conda environment with Python and R
+
+Type the following to create the conda environment with name <environment name>.
+You can install the specific version of python by including 'python=version number,
+otherwise, if you do not include it, it will install the latest version of Python.
+
+```
+conda create -c conde-forge -n <environment name> <python=3.10.12> ipython rpy2 r r-essentials
+pandas numpy seaborn matplotlib scikit-learn jupyter
+```
+
+## WSL2 extension for VS Code
