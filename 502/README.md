@@ -62,6 +62,8 @@ completely to install the latest version of python.
 conda create -c conde-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
 ```
 
+Just thinking of some fun environment names: vipeR, seRpent, Rython, rattleR, scaleR
+
 ## Running Jupyter Notebook from WSL2
 
 You can activate the conda environment with the following:
