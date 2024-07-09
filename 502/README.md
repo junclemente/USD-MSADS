@@ -130,3 +130,15 @@ sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-gener
 ```
 
 **Source:** [Installing Nbconvert](https://nbconvert.readthedocs.io/en/latest/install.html#supported-python-versions)
+
+### Forgot WSL2 sudo password
+
+Oops... you forgot your password?
+
+In a terminal outside of WSL:
+
+1. Run `wsl -u root`
+2. Run `passwd <username>`
+3. Enter new password.
+
+**Source:** [How to reset my WSL Ubuntu password?](https://github.com/junclemente/MSADS-MISC/tree/main/502)
