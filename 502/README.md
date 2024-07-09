@@ -53,14 +53,13 @@ After installing miniconda, initialize the bash and zsh shells:
 ## Create a conda environment with Python and R
 
 Type the following to create the conda environment. This will create an
-environment named "pyr-wsl". You can replace this with any name you want.
+environment named "cobRa". You can replace this with any name you want.
 This will also install python version 3.10.12. If you would like to install a
 different version, replace the version number, or, remove 'python=3.10.12'
 completely to install the latest version of python.
 
 ```
-conda create -c conde-forge -n pyr-wsl python=3.10.12 ipython rpy2 r r-essentials
-pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
+conda create -c conde-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
 ```
 
 ## Running Jupyter Notebook from WSL2
