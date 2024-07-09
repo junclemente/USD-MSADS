@@ -48,7 +48,7 @@ After installing miniconda, initialize the bash and zsh shells:
 ~/miniconda3/bin/conda init zsh
 ```
 
-**Source:** [Quick command line install](https://docs.anaconda.com/miniconda/)
+**Source:** [Miniconda: Quick command line install](https://docs.anaconda.com/miniconda/)
 
 ## Create a conda environment with Python and R
 
