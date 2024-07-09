@@ -90,4 +90,14 @@ Or copy and paste one of these URLs:
    http://127.0.0.1:8888/tree?token=c8c48b06310ff4f4b31bc3c5328c0cd4fd9421d7941d475b
 ```
 
-## WSL2 extension for VS Code
+Note that the token will be different everytime you restart the server.
+
+## WSL2 extension for Visual Studio Code (VSCode)
+
+If you don't have VSCode installed, download from here: [Visual Studio Code](https://code.visualstudio.com/)
+
+Install the WSL Extension to allow VSCode to connect to WSL by installing the
+extension and following the instructions on this page:
+[Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
+
+**Source**: [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl#:~:text=The%20WSL%20extension%20lets%20you,as%20you%20would%20from%20Windows.)
