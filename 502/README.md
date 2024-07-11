@@ -64,6 +64,13 @@ conda create -c conde-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials 
 
 Just thinking of some fun environment names: vipeR, seRpent, Rython, rattleR, scaleR
 
+If you decide that you want to change the name of your environment you can
+use `conda rename` by typing the following:
+
+```
+conda rename -n <name of old env> <name of new env>
+```
+
 ## Running Jupyter Notebook from WSL2
 
 You can activate the conda environment with the following:
