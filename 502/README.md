@@ -102,6 +102,15 @@ extension and following the instructions on this page:
 
 [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
 
+To begin programming in VSCode using the WSL environment:
+
+1. Open the WSL terminal.
+2. Activate your environment: `conda activate <environment name>`.
+3. Switch to the directory of your project: `cd \path\to\project`.
+4. Open VSCode by typing: `code .`.
+
+This will open up VS Code in your project directory and connected to WSL.
+
 **Source**: [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl#:~:text=The%20WSL%20extension%20lets%20you,as%20you%20would%20from%20Windows.)
 
 ## Exporting Jupyter Notebook to PDF
