@@ -62,6 +62,8 @@ completely to install the latest version of python.
 conda create -c conde-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
 ```
 
+### Renaming the conda environment
+
 Just thinking of some fun environment names: vipeR, seRpent, Rython, rattleR, scaleR
 
 If you decide that you want to change the name of your environment you can
@@ -79,12 +81,16 @@ You can activate the conda environment with the following:
 conda activate <environment name>
 ```
 
+### Start jupyter notebook
+
 And you should be able to start Jupyter Notebooks once you're in the
 environment by typing:
 
 ```
 jupyter notebook
 ```
+
+### Open the notebook in the browser
 
 This will start the Jupyter Notebook server but it may not open up a browser
 window. To view the notebook, follow the instructions in the console to get
@@ -98,16 +104,20 @@ Or copy and paste one of these URLs:
    http://127.0.0.1:8888/tree?token=c8c48b06310ff4f4b31bc3c5328c0cd4fd9421d7941d475b
 ```
 
-Note that the token will be different everytime you restart the server.
+**Note:** The token will be different every time you restart the server.
 
 ## WSL2 extension for Visual Studio Code (VSCode)
 
 If you don't have VSCode installed, download from here: [Visual Studio Code](https://code.visualstudio.com/)
 
+### Install WSL Extension
+
 Install the WSL Extension to allow VSCode to connect to WSL by installing the
 extension and following the instructions on this page:
 
 [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
+
+### Launch VS Code from WSL
 
 To begin programming in VSCode using the WSL environment:
 
@@ -127,18 +137,25 @@ To export your notebook to PDF, you will need to install a few more libraries.
 Open your conda environment: `conda activate <environment name>`
 
 To be consistent, I install everything from the conda-forge repository, hence
-the use of `-c conda-forge`
+the use of `-c conda-forge`.
+
+### Install nbconvert
+
 Install `nbconvert`:
 
 ```
 conda install -c conda-forge nbconvert
 ```
 
+### Install pandoc
+
 Install `Pandoc`
 
 ```
 sudo apt-get install pandoc
 ```
+
+### Install TeX
 
 Install `TeX`
 This is a large download so it may take some time to install.
@@ -149,7 +166,7 @@ sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-gener
 
 **Source:** [Installing Nbconvert](https://nbconvert.readthedocs.io/en/latest/install.html#supported-python-versions)
 
-### Forgot WSL2 sudo password
+## Forgot WSL2 sudo password
 
 Oops... you forgot your password?
 
