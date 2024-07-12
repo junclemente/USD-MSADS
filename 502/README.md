@@ -166,6 +166,19 @@ sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-gener
 
 **Source:** [Installing Nbconvert](https://nbconvert.readthedocs.io/en/latest/install.html#supported-python-versions)
 
+## Aliases in WSL2 (Ubuntu)
+
+To make things easier to start coding, I created an alias, like `ads502`, that
+goes to my ADS502 folder, activates my `vipeR` environment and then opens
+VSCode.
+
+To create your own aliases,
+
+1. Create a file called `.bash_aliases` if it doesn't exist yet.
+2. Open the file in a text editor such as nano.
+3. Create an alias such as: `alias ads502="cd ~/msads-code/ADS502 && conda activate vipeR && code ."`
+4. If everything was done right, your terminal window should show that you are in the correct directory7 and that VS Code is starting up.
+
 ## Forgot WSL2 sudo password
 
 Oops... you forgot your password?
