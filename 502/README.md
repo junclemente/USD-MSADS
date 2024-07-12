@@ -59,7 +59,7 @@ different version, replace the version number, or, remove 'python=3.10.12'
 completely to install the latest version of python.
 
 ```
-conda create -c conde-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
+conda create -c conda-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
 ```
 
 ### Renaming the conda environment
@@ -177,9 +177,9 @@ To create your own aliases,
 1. Create a file called `.bash_aliases` if it doesn't exist yet.
 2. Open the file in a text editor such as nano.
 3. Create an alias such as: `alias ads502="cd ~/msads-code/ADS502 && conda activate vipeR && code ."`
-4. Load the aliases file by typing: `source ~/.bashrc`. 
-5. Start by typing your alias... 
-4. If everything was done right, your terminal window should show that you are in the correct directory and that VS Code is starting up.
+4. Load the aliases file by typing: `source ~/.bashrc`.
+5. Start by typing your alias...
+6. If everything was done right, your terminal window should show that you are in the correct directory and that VS Code is starting up.
 
 ## Forgot WSL2 sudo password
 
