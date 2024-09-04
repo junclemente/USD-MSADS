@@ -1,0 +1,22 @@
+name: ads505new
+channels:
+  - conda-forge
+  - microsoft
+  - defaults
+dependencies:
+  - python
+  - dataclasses
+  - dmba
+  - jupyter
+  - matplotlib
+  - mlxtend
+  - mord
+  - networkx
+  - nltk
+  - numpy
+  - pandas
+  - pydotplus
+  - scikit-learn
+  - scikit-surprise
+  - seaborn
+  - pip
