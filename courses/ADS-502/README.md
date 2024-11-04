@@ -12,7 +12,7 @@ writing of this post (July 2024).
 Therefore, the work around is to create the environment in WSL2 and use
 VSCode extensions to remote into the WSL2 environment.
 
-## Install Windows Subsystem for Linus (WSL2)
+## Install Windows Subsystem for Linux (WSL2)
 
 If you do not already have WSL2 installed on your Windows machine, follow the
 directions on this page to install WSL2 and Ubuntu.
