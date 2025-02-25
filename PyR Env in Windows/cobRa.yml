@@ -1,0 +1,20 @@
+name: cobRa
+channels:
+  - conda-forge
+  - microsoft
+  - defaults
+dependencies:
+  - python=3.10.*
+  - ipython
+  - rpy2
+  - r
+  - r-essentials
+  - pandas
+  - numpy
+  - seaborn
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - statsmodels
+  - pydotplus
+  - pip
