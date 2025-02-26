@@ -8,9 +8,9 @@ Therefore, the work around is to create the environment in WSL2 and use VSCode e
 
 # Install Windows Subsystem for Linux (WSL2)
 
-```text
-WSL2 (Windows Subsystem for Linux 2) is the second iteration of Microsoft's compatibility layer that allows Windows users to run a Linux environment directly within Windows, without the need for a separate virtual machine or dual-boot setup. It provides a lightweight and seamless integration of Linux with Windows.
-```
+
+_WSL2 (Windows Subsystem for Linux 2) is the second iteration of Microsoft's compatibility layer that allows Windows users to run a Linux environment directly within Windows, without the need for a separate virtual machine or dual-boot setup. It provides a lightweight and seamless integration of Linux with Windows._
+
 
 If you do not already have WSL2 installed on your Windows machine, follow the directions on this page to install WSL2 and Ubuntu.
 
@@ -27,9 +27,8 @@ This will install WSL2 and Ubuntu by default.
 
 # Install miniconda in Ubuntu (WSL2)
 
-```text
-Miniconda is a minimal installer for Conda, a package and environment manager for Python. It provides a lightweight alternative to Anaconda, allowing users to create and manage Python environments without pre-installing a large set of libraries.
-```
+
+_Miniconda is a minimal installer for Conda, a package and environment manager for Python. It provides a lightweight alternative to Anaconda, allowing users to create and manage Python environments without pre-installing a large set of libraries._
 
 Next, open Ubuntu and install miniconda.
 
@@ -75,18 +74,10 @@ This will create the environment with Python 3.10 and other required libraries:
 - pydotplus
 - pip
 
-
-
-Type the following to create the conda environment. This will create an
-environment named "cobRa". You can replace this with any name you want.
-This will also install python version 3.10.12. If you would like to install a
-different version, replace the version number, or, remove 'python=3.10.12'
-completely to install the latest version of python.
-
 ## Using the CLI
 Instead of using the YAML file, the environment can also be created without using the YAML file:
 
-```
+```bash
 conda create -c conda-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
 ```
 
@@ -94,7 +85,7 @@ conda create -c conda-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials 
 
 You can activate the conda environment with the following:
 
-```
+```bash
 conda activate <environment name>
 ```
 
@@ -103,7 +94,7 @@ conda activate <environment name>
 And you should be able to start Jupyter Notebooks once you're in the
 environment by typing:
 
-```
+```bash
 jupyter notebook
 ```
 
