@@ -51,7 +51,30 @@ After installing miniconda, initialize the bash and zsh shells:
 
 **Source:** [Miniconda: Quick command line install](https://docs.anaconda.com/miniconda/)
 
-## Create a Conda environment with Python and R
+# Create a Conda environment with Python and R
+
+## Using the included YAML file
+
+Use the following command to create the `cobRa` environment from the provided YAML file:
+
+```bash
+conda env create -f /path/to/environment/cobRa.yml
+``` 
+This will create the environment with Python 3.10 and other required libraries: 
+- ipython
+- rpy2
+- r
+- r-essentials
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit-learn
+- jupyter
+- statsmodels
+- pydotplus
+- pip
+
 
 
 Type the following to create the conda environment. This will create an
@@ -60,22 +83,14 @@ This will also install python version 3.10.12. If you would like to install a
 different version, replace the version number, or, remove 'python=3.10.12'
 completely to install the latest version of python.
 
+## Using the CLI
+Instead of using the YAML file, the environment can also be created without using the YAML file:
+
 ```
 conda create -c conda-forge -n cobRa python=3.10.12 ipython rpy2 r r-essentials pandas numpy seaborn matplotlib scikit-learn jupyter statsmodels pydotplus
 ```
 
-### Renaming the conda environment
-
-Just thinking of some fun environment names: vipeR, seRpent, Rython, rattleR, scaleR
-
-If you decide that you want to change the name of your environment you can
-use `conda rename` by typing the following:
-
-```
-conda rename -n <name of old env> <name of new env>
-```
-
-## Running Jupyter Notebook from WSL2
+# Running Jupyter Notebook from WSL2
 
 You can activate the conda environment with the following:
 
@@ -83,7 +98,7 @@ You can activate the conda environment with the following:
 conda activate <environment name>
 ```
 
-### Start jupyter notebook
+## Start jupyter notebook
 
 And you should be able to start Jupyter Notebooks once you're in the
 environment by typing:
@@ -92,7 +107,7 @@ environment by typing:
 jupyter notebook
 ```
 
-### Open the notebook in the browser
+## Open the notebook in the browser
 
 This will start the Jupyter Notebook server but it may not open up a browser
 window. To view the notebook, follow the instructions in the console to get
@@ -108,18 +123,18 @@ Or copy and paste one of these URLs:
 
 **Note:** The token will be different every time you restart the server.
 
-## WSL2 extension for Visual Studio Code (VSCode)
+# WSL2 extension for Visual Studio Code (VSCode)
 
 If you don't have VSCode installed, download from here: [Visual Studio Code](https://code.visualstudio.com/)
 
-### Install WSL Extension
+## Install WSL Extension
 
 Install the WSL Extension to allow VSCode to connect to WSL by installing the
 extension and following the instructions on this page:
 
 [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
 
-### Launch VS Code from WSL
+## Launch VS Code from WSL
 
 To begin programming in VSCode using the WSL environment:
 
@@ -132,7 +147,7 @@ This will open up VS Code in your project directory and connected to WSL.
 
 **Source**: [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl#:~:text=The%20WSL%20extension%20lets%20you,as%20you%20would%20from%20Windows.)
 
-## Exporting Jupyter Notebook to PDF
+# Exporting Jupyter Notebook to PDF
 
 To export your notebook to PDF, you will need to install a few more libraries.
 
@@ -141,7 +156,7 @@ Open your conda environment: `conda activate <environment name>`
 To be consistent, I install everything from the conda-forge repository, hence
 the use of `-c conda-forge`.
 
-### Install nbconvert
+## Install nbconvert
 
 Install `nbconvert`:
 
@@ -149,7 +164,7 @@ Install `nbconvert`:
 conda install -c conda-forge nbconvert
 ```
 
-### Install pandoc
+## Install pandoc
 
 Install `Pandoc`
 
@@ -157,7 +172,7 @@ Install `Pandoc`
 sudo apt-get install pandoc
 ```
 
-### Install TeX
+## Install TeX
 
 Install `TeX`
 This is a large download so it may take some time to install.
@@ -168,41 +183,52 @@ sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-gener
 
 **Source:** [Installing Nbconvert](https://nbconvert.readthedocs.io/en/latest/install.html#supported-python-versions)
 
-## Creating a conda environment from a yml file.
-
-```
-conda env create -n ENVNAME --file ENV.yml
-```
-
-## Creating a conda environment from a yml file.
-
-```
-conda create -n ENVNAME --file ENV.txt
-```
-
-## Aliases in WSL2 (Ubuntu)
+# Aliases in WSL2 (Ubuntu)
 
 To make things easier to start coding, I created an alias, like `ads502`, that
-goes to my ADS502 folder, activates my `vipeR` environment and then opens
+goes to my ADS502 folder, activates my `cobRa` environment and then opens
 VSCode.
 
 To create your own aliases,
 
-1. Create a file called `.bash_aliases` if it doesn't exist yet.
+1. Create a file called `.bash_aliases` if it doesn't exist yet:
+```bash
+touch .bash_aliases
+```
+
 2. Open the file in a text editor such as nano.
-3. Create an alias such as: `alias ads502="cd ~/msads-code/ADS502 && conda activate vipeR && code ."`
-4. Load the aliases file by typing: `source ~/.bashrc`.
-5. Start by typing your alias...
+```bash
+nano .bash_aliases
+``` 
+
+3. Create an alias such as: 
+```text
+alias ads502="cd ~/msads-code/ADS502 && conda activate cobRa && code ."
+```
+4. Load the aliases file by typing: 
+```bash
+source ~/.bashrc
+```
+5. Start by typing your alias. In this example: 
+```bash
+ads502
+```
 6. If everything was done right, your terminal window should show that you are in the correct directory and that VS Code is starting up.
 
-## Forgot WSL2 sudo password
+# Forgot WSL2 sudo password
 
 Oops... you forgot your password?
 
-In a terminal outside of WSL:
+In a terminal outside of WSL2:
 
-1. Run `wsl -u root`
-2. Run `passwd <username>`
+1. Use the following command: 
+```bash 
+wsl -u root
+```
+2. Then, change the password with the following:
+```bash 
+passwd <username>
+```
 3. Enter new password.
 
-**Source:** [How to reset my WSL Ubuntu password?](https://github.com/junclemente/MSADS-MISC/tree/main/502)
+**Source:** [How to reset my WSL Ubuntu password?](https://superuser.com/questions/1829481/how-to-reset-my-wsl-ubuntu-password)
