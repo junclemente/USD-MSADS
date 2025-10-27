@@ -4,6 +4,15 @@ This repository is a resource hub that I used to collect information that I foun
 
 This repository includes setup guides, environment configuration notes, and course references that I found useful throught the program.
 
+## 📖 Table of Contents
+
+- [🎓 Masters of Science in Applied Data Science - University of San Diego](#-masters-of-science-in-applied-data-science---university-of-san-diego)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [💻 VS Code and Windows Development](#-vs-code-and-windows-development)
+  - [📚 Courses](#-courses)
+  - [🧩 Custom EDA Library](#-custom-eda-library)
+  - [📰 License](#-license)
+
 ## 💻 VS Code and Windows Development
 
 I used to do development on a Mac but have since replaced my main PCs with Windows-based computers. For the most part, the MSADS program can be done in Windows. In a couple of classes, it's necessary to run _Python_ and _R_ in the same Jupyter Notebook. Unfortunately, this can't be done natively in Windows. Thankfully, Windows Subsystem for Linux 2 (WSL2) makes this possible.
@@ -14,7 +23,7 @@ I used to do development on a Mac but have since replaced my main PCs with Windo
 - [Using Aliases in WSL2](setup/wsl2_aliases.md)
 - [Creating and Updating Conda Environments from YAML file](setup/creating_conda_envs.md)
 
-## Courses
+## 📚 Courses
 
 Spring 2024
 
@@ -46,10 +55,34 @@ Fall 2025
 - ADS 509 - Applied Text Mining
 - ADS 599 - Capstone Project
 
-## Custom EDA Library
+## 🧩 Custom EDA Library
 
 I started developing my own EDA library since there is a lot of repetitive code when it comes to exploratory data analysis. You can find it here if you want to check it out. Just be aware that it is in active development and it might be a long time between library updates.
 
 You can find that library here: [jcds repository](https://github.com/junclemente/jcds).
 
 This will make the functions useable in the notebook.
+
+## 📰 License
+
+[MIT License](./LICENSE)
+
+Copyright (c) 2025 Jun Clemente
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
