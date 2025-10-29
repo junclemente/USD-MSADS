@@ -1,20 +1,34 @@
 name: cobRa
 channels:
   - conda-forge
-  - microsoft
   - defaults
+channel_priority: strict
 dependencies:
-  - python=3.10.*
+  # Python core
+  - python=3.10
   - ipython
-  - rpy2
-  - r
-  - r-essentials
-  - pandas
   - numpy
+  - pandas
   - seaborn
   - matplotlib
   - scikit-learn
-  - jupyter
   - statsmodels
+
+  # Jupyter
+  - jupyter
+  - nb_conda_kernels
+  # (optional) nicer UI; comment out if you want to stay minimal:
+  # - jupyterlab
+  # - jupytext
+
+  # R + interop
+  - r-base  # will resolve to a current R (e.g., 4.3/4.4)
+  - r-essentials  # includes IRkernel, tidyverse, etc.
+  - rpy2
+
+  # Viz tooling for trees/graphs
+  - graphviz
   - pydotplus
+
+  # pip section stays (empty) so you can add PyPI-only bits later
   - pip
