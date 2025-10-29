@@ -22,6 +22,7 @@ I used to do development on a Mac but have since replaced my main PCs with Windo
 - [Export Jupyter Notebooks as PDF from VSCode](setup/jnotebook_export_pdf.md)
 - [Using Aliases in WSL2](setup/wsl2_aliases.md)
 - [Creating and Updating Conda Environments from YAML file](setup/creating_conda_envs.md)
+- [Recommmended VSCode Extensions for MS-ADS](setup/vscode-extensions.md)
 
 ## 📚 Courses
 
