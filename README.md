@@ -1,68 +1,86 @@
-# 🎓 Masters of Science in Applied Data Science - University of San Diego
+# 🎓 Master of Science in Applied Data Science — University of San Diego
 
-This repository is a resource hub that I used to collect information that I found helpful while in the MS-ADS program at the University of San Diego. I hope this could also be useful for others who are taking the program.
+This repository serves as a resource hub where I’ve collected information, notes, and configurations that I found helpful during the **Master of Science in Applied Data Science (MS-ADS)** program at the **University of San Diego**. I hope this can also be useful for others currently enrolled in — or preparing to start — the program.
 
-This repository includes setup guides, environment configuration notes, and course references that I found useful throught the program.
+It includes setup guides, environment configuration notes, and course references that I found most useful throughout my studies.
+
+> 🧠 **Note:** Some setup guides in this repository were refined or reformatted with the help of ChatGPT to improve clarity and organization. All technical content is based on my actual configurations and experiences during the program.
+
+---
 
 ## 📖 Table of Contents
 
-- [🎓 Masters of Science in Applied Data Science - University of San Diego](#-masters-of-science-in-applied-data-science---university-of-san-diego)
+- [🎓 Master of Science in Applied Data Science — University of San Diego](#-master-of-science-in-applied-data-science--university-of-san-diego)
   - [📖 Table of Contents](#-table-of-contents)
   - [💻 VS Code and Windows Development](#-vs-code-and-windows-development)
   - [📚 Courses](#-courses)
+    - [Spring 2024](#spring-2024)
+    - [Summer 2024](#summer-2024)
+    - [Fall 2024](#fall-2024)
+    - [Spring 2025](#spring-2025)
+    - [Summer 2025](#summer-2025)
+    - [Fall 2025](#fall-2025)
   - [🧩 Custom EDA Library](#-custom-eda-library)
   - [📰 License](#-license)
 
+---
+
 ## 💻 VS Code and Windows Development
 
-I used to do development on a Mac but have since replaced my main PCs with Windows-based computers. For the most part, the MSADS program can be done in Windows. In a couple of classes, it's necessary to run _Python_ and _R_ in the same Jupyter Notebook. Unfortunately, this can't be done natively in Windows. Thankfully, Windows Subsystem for Linux 2 (WSL2) makes this possible.
+I used to develop primarily on a Mac but have since replaced my main PCs with Windows-based systems. For the most part, the MS-ADS program can be completed entirely in Windows.  
 
-- [Setting up WSL2 and VSCode in Windows](setup/vscode_and_wsl2.md)
-- [Creating a Conda environment to run Python and R in Windows](setup/python_r_windows.md)
-- [Export Jupyter Notebooks as PDF from VSCode](setup/jnotebook_export_pdf.md)
+However, in a few classes it’s necessary to run both _Python_ and _R_ in the same Jupyter Notebook — something that isn’t supported natively in Windows. Thankfully, **Windows Subsystem for Linux 2 (WSL2)** makes this possible.
+
+Setup guides and references:
+
+- [Setting up WSL2 and VS Code in Windows](setup/vscode_and_wsl2.md)
+- [Creating a Conda Environment to Run Python and R in Windows](setup/python_r_windows.md)
+- [Exporting Jupyter Notebooks as PDF from VS Code](setup/jnotebook_export_pdf.md)
 - [Using Aliases in WSL2](setup/wsl2_aliases.md)
-- [Creating and Updating Conda Environments from YAML file](setup/creating_conda_envs.md)
-- [Recommmended VSCode Extensions for MS-ADS](setup/vscode-extensions.md)
+- [Creating and Updating Conda Environments from a YAML File](setup/creating_conda_envs.md)
+- [Recommended VS Code Extensions for MS-ADS](setup/vscode_extensions.md)
+
+---
 
 ## 📚 Courses
 
-Spring 2024
+### Spring 2024
+- ADS 500A — Probability and Statistics for Data Science  
+- ADS 500B — Data Science Programming  
 
-- ADS 500A - Probability and Statistics for Data Science
-- ADS 500B - Data Science Programming
+### Summer 2024
+- ADS 501 — Foundations of Data Science and Data Ethics  
+- ADS 502 — Applied Data Mining  
 
-Summer 2024
+### Fall 2024
+- ADS 505 — Applied Data Science for Business  
+- ADS 506 — Applied Time Series Analysis  
 
-- ADS 501 - Foundations of Data Science and Data Ethics
-- ADS 502 - Applied Data Mining
+### Spring 2025
+- ADS 507 — Practical Data Engineering  
+- ADS 508 — Data Science with Cloud Computing  
 
-Fall 2024
+### Summer 2025
+- ADS 503 — Applied Predictive Modeling  
+- ADS 504 — Machine Learning and Deep Learning for Data Science  
 
-- ADS 505 - Applied Data Science for Business
-- ADS 506 - Applied Time Series Analysis
+### Fall 2025
+- ADS 509 — Applied Text Mining  
+- ADS 599 — Capstone Project  
 
-Spring 2025
-
-- ADS 507 - Practical Data Engineering
-- ADS 508 - Data Science with Cloud Computing
-
-Summer 2025
-
-- ADS 503 - Applied Predictive Modeling
-- ADS 504 - Machine Learning and Deep Learning for Data Science
-
-Fall 2025
-
-- ADS 509 - Applied Text Mining
-- ADS 599 - Capstone Project
+---
 
 ## 🧩 Custom EDA Library
 
-I started developing my own EDA library since there is a lot of repetitive code when it comes to exploratory data analysis. You can find it here if you want to check it out. Just be aware that it is in active development and it might be a long time between library updates.
+I began developing my own **Exploratory Data Analysis (EDA)** library to simplify repetitive EDA tasks that come up across multiple courses.  
+It’s still in active development, so updates may be infrequent, but it’s already functional for common EDA workflows.
 
-You can find that library here: [jcds repository](https://github.com/junclemente/jcds).
+You can check it out here:  
+👉 [**jcds repository**](https://github.com/junclemente/jcds)
 
-This will make the functions useable in the notebook.
+Once installed, the library’s functions can be imported directly for use within Jupyter Notebooks.
+
+---
 
 ## 📰 License
 
