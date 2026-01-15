@@ -1,7 +1,7 @@
 
 # Exporting Jupyter Notebook to PDF
 
-To export your notebook to PDF, you will need to install a few more libraries.
+To export your notebook to PDF in a Linux environment (such as Ubuntu running in WSL2), you will need to install a few more libraries.
 
 Open your conda environment: `conda activate <environment name>`
 
@@ -24,7 +24,7 @@ Install `Pandoc`
 sudo apt-get install pandoc
 ```
 
-## Install TeX
+## Install TeX (required for PDF export)
 
 Install `TeX`
 This is a large download so it may take some time to install.
